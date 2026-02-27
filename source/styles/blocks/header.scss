@@ -8,10 +8,9 @@
   cursor: pointer;
   width: 25px;
   height: 30px;
-}
 
-@media (min-width: 768px) {
-  .main-header__toggle {
+  @media (min-width: 768px) {
     display: none;
   }
 }
+
