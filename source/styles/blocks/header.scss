@@ -1,5 +1,17 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.main-header {
+
+}
+
+.main-header__toggle {
+  background: url("../../icons/stack.svg#menu") no-repeat center;
+  border: none;
+  cursor: pointer;
+  width: 25px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .main-header__toggle {
+    display: none;
+  }
 }
