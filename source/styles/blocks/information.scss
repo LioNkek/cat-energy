@@ -1,0 +1,34 @@
+.information__item::before {
+  content: "";
+  display: block;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-basic;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 35px;
+  }
+}
+
+.information__item--leaf::before {
+  background-image: url("../../icons/stack.svg#leaf");
+}
+
+.information__item--cup::before {
+  background-image: url("../../icons/stack.svg#cup");
+}
+
+.information__item--cutlery::before {
+  background-image: url("../../icons/stack.svg#cutlery");
+}
+
+.information__item--clock::before {
+  background-image: url("../../icons/stack.svg#clock");
+}
+
