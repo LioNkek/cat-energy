@@ -35,3 +35,13 @@
     height: 100px;
   }
 }
+
+.programs__link {
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    background: url("../../icons/stack.svg#arrow") no-repeat center;
+    transform: translateY(-50%);
+  }
+}
