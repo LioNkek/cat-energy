@@ -22,3 +22,52 @@
     line-height: 26px;
   }
 }
+
+.slider-button {
+  cursor: pointer;
+  display: block;
+  width: 4px;
+  height: 512px;
+  background-color: #666666;
+  padding: 0;
+  border: none;
+  transform: translate(-50%, -50%);
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    mask-image: url("../../icons/stack.svg#controls");
+    background-color: #666666;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  &:is(:hover, :focus-visible, :focus)::after {
+    background-color: $bg-basic;
+  }
+
+  &:is(:hover, :focus-visible, :focus) {
+    background-color: $bg-basic;
+  }
+
+  &:active::after {
+    background-color: #5eaa2f;
+  }
+}
