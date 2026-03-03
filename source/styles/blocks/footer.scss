@@ -36,26 +36,22 @@
 }
 
 .brand__link {
+  mask-image: url("../../icons/stack.svg#logo-htmlacademy");
+  background-color: #666666;
   width: 27px;
   height: 34px;
-  display: block;
 
-  &::before {
-    content: "";
-    mask-image: url("../../icons/stack.svg#logo-htmlacademy");
-    background-color: #666666;
-    display: block;
-    width: 27px;
-    height: 34px;
-  }
-
-  &:is(:hover, :focus-visible, :focus)::before {
+  &:is(:hover, :focus-visible, :focus) {
     background-color: $bg-basic;
   }
 
-  &:active::before {
+  &:active {
     opacity: 0.3;
   }
+}
+
+.brand {
+  display: flex;
 }
 
 .brand__text {
@@ -67,4 +63,9 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.brand:hover .brand__text,
+.brand:hover .brand__link {
+  opacity: 0.3;
 }
