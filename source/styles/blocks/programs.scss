@@ -42,6 +42,12 @@
     width: 32px;
     height: 10px;
     background: url("../../icons/stack.svg#arrow") no-repeat center;
-    transform: translateY(-50%);
+    transition: transform 0.3s linear;
+    transform-origin: left center;
+    display: block;
+  }
+
+  &:is(:hover, :active, :focus-visible, :focus)::after {
+    transform: scale(1.35);
   }
 }
