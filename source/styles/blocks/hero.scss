@@ -1,3 +1,63 @@
+.hero {
+  font-family: $base-font;
+  font-weight: 400;
+  letter-spacing: 0%;
+}
+
+.hero__wrapper {
+  background-color: $bg-basic;
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+  }
+
+  @media (min-width: 1440px) {
+    background-color: transparent;
+  }
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    color: #000000;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    color: #000000;
+  }
+}
+
+.hero__text {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+
+
 .hero__main-catalog-item::before {
   content: "";
   border: none;
