@@ -35,23 +35,31 @@
   mask-image: url("../../icons/stack.svg#logo-telegram");
 }
 
-.brand__link {
-  mask-image: url("../../icons/stack.svg#logo-htmlacademy");
-  background-color: #666666;
-  width: 27px;
-  height: 34px;
+.brand {
+  display: flex;
 
-  &:is(:hover, :focus-visible, :focus) {
+  &:is(:hover, :focus-visible, :focus-within, :focus) .brand__link::before {
     background-color: $bg-basic;
   }
 
-  &:active {
+  &:active .brand__link::before,
+  &:active .brand__text {
     opacity: 0.3;
   }
 }
 
-.brand {
-  display: flex;
+.brand__link {
+  width: 27px;
+  height: 34px;
+
+  &::before {
+    content: "";
+    display: block;
+    mask-image: url("../../icons/stack.svg#logo-htmlacademy");
+    background-color: #666666;
+    width: 27px;
+    height: 34px;
+  }
 }
 
 .brand__text {
@@ -59,13 +67,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-
-  &:active {
-    opacity: 0.3;
-  }
+  color: #666666;
 }
 
-.brand:hover .brand__text,
-.brand:hover .brand__link {
-  opacity: 0.3;
-}
