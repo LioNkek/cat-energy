@@ -1,0 +1,70 @@
+.social__item {
+
+}
+
+.social__link {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-color: #666666;
+  }
+
+  &:is(:hover, :focus-visible, :focus)::before {
+    background-color: $bg-basic;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.social__link--vk::before {
+  content: "";
+  mask-image: url("../../icons/stack.svg#logo-vkontakte");
+}
+
+.social__link--tube::before {
+  content: "";
+  mask-image: url("../../icons/stack.svg#logo-youtube");
+}
+
+.social__link--tg::before {
+  content: "";
+  mask-image: url("../../icons/stack.svg#logo-telegram");
+}
+
+.brand__link {
+  width: 27px;
+  height: 34px;
+  display: block;
+
+  &::before {
+    content: "";
+    mask-image: url("../../icons/stack.svg#logo-htmlacademy");
+    background-color: #666666;
+    display: block;
+    width: 27px;
+    height: 34px;
+  }
+
+  &:is(:hover, :focus-visible, :focus)::before {
+    background-color: $bg-basic;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.brand__text {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
