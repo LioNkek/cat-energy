@@ -6,3 +6,25 @@ body {
 a {
   text-decoration: none;
 }
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
