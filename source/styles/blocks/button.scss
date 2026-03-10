@@ -12,12 +12,12 @@
   transition: 0.3s;
   border: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 26px;
   }

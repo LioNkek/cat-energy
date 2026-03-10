@@ -10,14 +10,14 @@
   text-align: center;
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     text-align: start;
     color: #000000;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
     text-align: start;
@@ -32,13 +32,13 @@
   text-transform: uppercase;
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
@@ -48,11 +48,11 @@
 .hero__link {
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: auto;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     width: auto;
   }
 }
