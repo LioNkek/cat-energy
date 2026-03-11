@@ -46,6 +46,7 @@
 }
 
 .hero__link {
+  box-sizing: border-box;
   width: 100%;
 
   @media (min-width: $tablet-width) {

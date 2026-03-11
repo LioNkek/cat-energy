@@ -6,4 +6,75 @@
   letter-spacing: 0%;
   text-transform: uppercase;
   color: #000000;
+
+  display: none;
+  width: 100%;
+
+  .main-nav--closed {
+    display: block;
+  }
+
+  .main-nav--no-js {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: auto;
+  }
+}
+
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-right: -20px;
+  }
+}
+
+.main-nav__link {
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  position: relative;
+  display: block;
+  padding: 25px 0;
+  text-transform: uppercase;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid #e6e6e6;
+  transition: 0.3s;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    border: none;
+    padding: 10px 19px;
+
+    .main-nav__link--current::after {
+      content: "";
+      position: absolute;
+      left: 20px;
+      bottom: 0;
+      right: 0;
+      height: 2px;
+      background-color: $bg-basic;
+      width: calc(100% - 40px);
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

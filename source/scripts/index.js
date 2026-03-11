@@ -1,15 +1,12 @@
 /* в этот файл добавляет скрипты*/
 const mainNav = document.querySelector('.main-nav');
-const mainNavToggle = document.querySelector('.main-nav--toggle');
+const mainHeaderToggle = document.querySelector('.main-header__toggle');
 
 mainNav.classList.remove('main-nav--nojs');
+mainHeaderToggle.classList.remove('main-header__toggle--nojs');
 
-mainNavToggle.addEventListener('click', () => {
-  if (mainNav.classList.contains('main-nav--closed')) {
-    mainNav.classList.remove('main-nav--closed');
-    mainNav.classList.add('main-nav--opened');
-  } else {
-    mainNav.classList.add('main-nav--closed');
-    mainNav.classList.remove('main-nav--opened');
-  }
+mainHeaderToggle.addEventListener('click', () => {
+  mainHeaderToggle.classList.toggle('main-header__toggle--opened');
+  mainNav.classList.toggle('main-nav--closed');
 });
+
