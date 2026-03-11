@@ -13,7 +13,7 @@
   width: 100%;
   min-height: 306px;
   background-image:
-    linear-gradient($bg-basicd9),
+    linear-gradient(#68b738d9),
     image-set(
       url("../../images/hero-background-mobile@1x.png") 1x,
       url("../../images/hero-background-mobile@2x.png") 2x
@@ -34,7 +34,7 @@
     right: 0;
     left: inherit;
     background-image:
-      linear-gradient($bg-basicd9),
+      linear-gradient(#68b738d9),
       image-set(
         url("../../images/hero-background-desktop@1x.png") 1x,
         url("../../images/hero-background-desktop@2x.png") 2x
@@ -72,6 +72,25 @@
 @media (min-width: $desktop-width) {
   .main-header--preview .main-nav__link--current::after {
     color: #ffffff;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 190px;
+  gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 174px;
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 202px;
+    gap: 14px;
   }
 }
 
