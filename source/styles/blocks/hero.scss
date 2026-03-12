@@ -2,26 +2,40 @@
   font-family: $base-font;
   font-weight: 400;
   letter-spacing: 0%;
+
+  position: relative;
+  text-align: center;
+  padding-top: 27px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-top: 55px;
+    padding-left: 90px;
+    margin-bottom: 5px;
+    min-height: 860px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-top: 55px;
+    padding-left: 80px;
+    margin-bottom: 80px;
+    min-height: 530px;
 }
 
 .hero__title {
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
   color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    text-align: start;
-    color: #000000;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
-    text-align: start;
-    color: #000000;
+    max-width: 520px;
+    margin-bottom: 45px;
   }
 }
 
