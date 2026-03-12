@@ -10,19 +10,27 @@
   display: none;
   width: 100%;
 
-  .main-nav--closed {
-    display: block;
-  }
-
-  .main-nav--no-js {
-    display: block;
-  }
+  position: absolute;
+  left: 0;
+  top: 65px;
+  z-index: 3;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     display: block;
     width: auto;
+    position: static;
   }
 }
+
+.main-nav--closed {
+  display: block;
+}
+
+.main-nav--no-js {
+  display: block;
+}
+
 
 .main-nav__list {
   list-style-type: none;
