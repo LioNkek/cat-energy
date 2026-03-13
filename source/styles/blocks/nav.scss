@@ -8,18 +8,26 @@
   color: #000000;
 
   display: none;
-  width: 100%;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
 
   position: absolute;
-  left: 0;
   top: 65px;
   z-index: 3;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: auto;
     position: static;
+    background-color: transparent;
+    margin: 0;
+    width: auto;         // Отменяем 100vw
+    margin-left: 0;      // Убираем выезд влево
+    margin-right: 0;     // Убираем выезд вправо
+    max-width: 100%;
   }
 }
 
