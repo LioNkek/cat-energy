@@ -26,6 +26,7 @@
 }
 
 .hero__title {
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
@@ -37,6 +38,7 @@
     line-height: 60px;
     max-width: 520px;
     margin-bottom: 45px;
+    color: #000000;
   }
 }
 
@@ -46,29 +48,56 @@
   letter-spacing: 0%;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 25px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+    margin-bottom: 50px;
   }
 }
 
 .hero__link {
   box-sizing: border-box;
   width: 100%;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 16px 27px;
+  }
+}
+
+.hero__image {
+  display: block;
+  margin: 0 auto 5px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    bottom: inherit;
+    margin: auto;
+    transform: translateX(-34%);
   }
 }
