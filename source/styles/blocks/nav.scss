@@ -8,11 +8,8 @@
   color: #000000;
 
   display: none;
-  left: 50%;
-  right: 50%;
   width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  margin-left: -20px;
 
   position: absolute;
   top: 65px;
@@ -24,10 +21,7 @@
     position: static;
     background-color: transparent;
     margin: 0;
-    width: auto;         // Отменяем 100vw
-    margin-left: 0;      // Убираем выезд влево
-    margin-right: 0;     // Убираем выезд вправо
-    max-width: 100%;
+    width: auto;
   }
 }
 
