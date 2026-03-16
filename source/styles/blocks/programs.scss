@@ -1,7 +1,57 @@
+.programs {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.programs__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 30px 20px 20px;
+
+  & + & {
+    margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 315px 58px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 80px 55px 58px;
+  }
+}
+
 .programs__item::before {
   content: "";
   border: none;
-  display: block;
+  position: absolute;
+  top: 22px;
+
+  @media (min-width: $tablet-width) {
+    top: 90px;
+    right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 45px;
+    right: inherit;
+  }
 }
 
 .programs__item--diet::before {
@@ -36,7 +86,62 @@
   }
 }
 
+.programs__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: $base-font;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 35px;
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 70px;
+  }
+}
+
+.programs__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 0;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 27px;
+    margin-bottom: 27px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border: none;
+  }
+}
+
 .programs__link {
+  display: flex;
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: auto;
+
   &::after {
     content: "";
     width: 32px;
@@ -45,6 +150,7 @@
     transition: transform 0.3s linear;
     transform-origin: left center;
     display: block;
+    margin: auto 0 auto 15px;
   }
 
   &:is(:hover, :active, :focus-visible, :focus)::after {

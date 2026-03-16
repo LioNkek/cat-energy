@@ -8,6 +8,19 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .container {
   position: relative;
   display: block;
