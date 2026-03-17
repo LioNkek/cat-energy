@@ -1,5 +1,9 @@
 .information {
   margin-bottom: 49px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .information__title {
@@ -120,3 +124,4 @@
     }
   }
 }
+
