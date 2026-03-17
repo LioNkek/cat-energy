@@ -1,3 +1,7 @@
+.information {
+  margin-bottom: 49px;
+}
+
 .information__title {
   padding-top: 20px;
   margin: 0 0 40px;
@@ -106,5 +110,13 @@
     font-size: 16px;
     line-height: 24px;
     max-width: 250px;
+  }
+
+  .tablet-break {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }
