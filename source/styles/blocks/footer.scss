@@ -1,5 +1,52 @@
-.social__item {
+.page-footer__container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  position: relative;
 
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto auto auto;
+    height: 147px;
+    grid-template-rows: none;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  position: relative;
+  display: block;
+  font-size: 0;
+  width: 128px;
+  margin: 20px auto 0;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: auto auto auto -20px;
+  }
+}
+
+.social__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  box-shadow:
+    0 -1px 0 0 #d9d9d9,
+    0 1px 0 0 #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+    margin: 0;
+  }
+}
+
+.social__item {
+  padding: 10px;
 }
 
 .social__link {
@@ -37,6 +84,16 @@
 
 .brand {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    justify-content: end;
+    gap: 10px;
+  }
 
   &:is(:hover, :focus-visible, :focus-within, :focus) .brand__link::before {
     background-color: $bg-basic;
@@ -46,6 +103,14 @@
   &:active .brand__text {
     opacity: 0.3;
   }
+}
+
+.brand__text {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
 }
 
 .brand__link {
@@ -60,13 +125,5 @@
     width: 27px;
     height: 34px;
   }
-}
-
-.brand__text {
-  font-family: $second-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #666666;
 }
 
