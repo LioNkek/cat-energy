@@ -2,7 +2,7 @@
 
 * Студент: [Lev](https://github.com/LioNkek)
 * Наставник: [Академия](https://htmlacademy.ru/).
-* Сайт: [седона](https://lionkek.github.io/cat-energy/)
+* Сайт: [кэт энерджи](https://lionkek.github.io/cat-energy/)
 
 ---
 
