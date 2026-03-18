@@ -1,7 +1,8 @@
 # Личный проект «{{projectTitle}}»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [Lev](https://github.com/LioNkek)
 * Наставник: [Академия](https://htmlacademy.ru/).
+* Сайт: [седона](https://lionkek.github.io/cat-energy/)
 
 ---
 
