@@ -61,6 +61,10 @@
     box-shadow: none;
     padding: 0 37px 40px;
     margin: 0;
+    outline: 1px solid #d9d9d9;
+    outline-offset: -1px;
+    grid-template-rows: auto auto auto 1fr;
+    align-content: start;
   }
 }
 
@@ -80,6 +84,12 @@
   width: 30px;
   height: 30px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin: 50px auto;
+  }
 }
 
 .catalog__name {
@@ -116,6 +126,11 @@
   text-align: center;
   margin-top: 23px;
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin: 0 auto 23px;
+  }
 }
 
 .catalog__text--show-all {
@@ -126,6 +141,13 @@
   font-weight: 400;
   text-align: center;
   margin: 0 0 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .catalog__description {
