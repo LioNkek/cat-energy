@@ -109,3 +109,9 @@
     background-color: #ffffff;
   }
 }
+
+.main-nav__item:nth-child(2) .main-nav__link--current::after {
+  @media (min-width: $desktop-width) {
+    background-color: $bg-basic;
+  }
+}
