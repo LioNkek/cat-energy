@@ -127,6 +127,11 @@
 }
 
 .catalog__name--show-all {
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   width: auto;
   grid-column: auto;
   text-align: center;
