@@ -35,7 +35,7 @@
 .additional-products__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 54px;
   display: grid;
   gap: 31px;
 }
@@ -104,4 +104,25 @@
   box-sizing: border-box;
   width: 100%;
   align-self: end;
+}
+
+.additional-products__promo {
+  background-size: cover;
+  background-image:
+    linear-gradient(#68b738d9),
+    image-set(
+      url("../../images/gift-background-mobile@1x.png") 1x,
+      url("../../images/gift-background-mobile@2x.png") 2x
+    );
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.additional-products__gift {
+  display: block;
+  background-image: url("../../icons/stack.svg#gift");
+  width: 78px;
+  height: 80px;
+  margin: 0 auto;
 }
