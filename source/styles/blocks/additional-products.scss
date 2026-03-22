@@ -2,9 +2,9 @@
   overflow: hidden;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 80px;
   }
 }
 
@@ -27,6 +27,8 @@
     font-size: 40px;
     line-height: 40px;
     margin: 71px 0 105px;
+    grid-column: 1 / -1;
+    width: max-content;
   }
 
 
