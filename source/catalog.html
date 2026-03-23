@@ -398,11 +398,11 @@
       <div class="additional-products__promo">
         <a class="additional-products__gift" href="#" alt="Получить подарок"></a>
         <p class="additional-products__promo-text">
-          Закажите все<br> и получите чехол для<br> кота в подарок!
+          Закажите все<br>и получите чехол для<br>кота в подарок!
         </p>
       </div>
     </section>
-    <section class="catalog-promotions">
+    <section class="catalog-promotions container">
       <h2 class="catalog-promotions__title">
         Акции и новинки
       </h2>
@@ -414,23 +414,25 @@
           Ваш e-mail
         </label>
         <input class="subscription-field" placeholder="кuklachev@gmail.com" type="email" name="subscription-email" id="subscription-email" required="">
-        <button class="subscription-button" type="submit">
+        <button class="subscription-button button" type="submit">
           Подписаться
         </button>
       </form>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">
-        Контакты
+      <h2 class="visually-hidden">
+        Контакты и карта
       </h2>
-      <h3 class="contacts__text">
-        приглашаем к сотрудничеству дилеров!
-      </h3>
-      <p class="contacts__address">
-        ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург
-      </p>
+      <div class="contacts__container container">
+        <h3 class="contacts__text">приглашаем
+          к сотрудничеству
+          дилеров!
+        </h3>
+        <p class="contacts__address">ул. Большая
+          Конюшенная, д. 19/8
+          <span>Санкт-Петербург</span>
+        </p>
+      </div>
       <div class="contacts__map">
         <iframe src="" frameborder="0">
         </iframe>
@@ -442,34 +444,36 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <a class="page-footer__logo-text" href="index.html">
-      <img class="page-footer__logo-text-image" src="images/logo-text.svg" width="128" height="24" alt="Кэт энерджи текст логотипа">
-    </a>
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Иконка ВКонтакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--tube" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Иконка YouTube</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Иконка Telegram</span>
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__brand brand">
-      <a class="brand__text" href="https://htmlacademy.ru/">
-        HTML Academy
+  <footer class="page-footer social">
+    <div class="page-footer__container container">
+      <a class="page-footer__logo" href="index.html">
+        <img src="images/logo-text.svg" width="128" height="24" alt="Кэт энерджи текст логотипа">
       </a>
-      <a class="brand__link" href="https://htmlacademy.ru/">
-        <span class="visually-hidden">Перейти на сайт HTML Academy</span>
-      </a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Иконка ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Иконка YouTube</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Иконка Telegram</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__brand brand">
+        <a class="brand__text" href="https://htmlacademy.ru/">
+          HTML Academy
+        </a>
+        <a class="brand__link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Перейти на сайт HTML Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
   <script src="scripts/index.js"></script>
