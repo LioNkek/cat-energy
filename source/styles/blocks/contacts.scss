@@ -1,5 +1,13 @@
 .contacts {
   position: relative;
+
+  img {
+    display: block;
+  }
+
+  iframe {
+    display: none;
+  }
 }
 
 .contacts__container {
