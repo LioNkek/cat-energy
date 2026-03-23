@@ -1,5 +1,16 @@
 .contacts {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
 
   img {
     display: none;
@@ -90,5 +101,11 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
+  }
+}
+
+.contacts__map {
+  iframe {
+    width: 100%;
   }
 }
