@@ -1,5 +1,6 @@
 .advantages__container {
-  background-color: #eaeaea;
+  background-color: $bg-second;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
@@ -129,6 +130,7 @@
   color: #000000;
   text-align: center;
   margin: 0;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
