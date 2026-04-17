@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding: 30px 20px 20px;
+  padding: 30px 20px 22px;
 
   & + & {
     margin-top: 20px;
@@ -41,7 +41,7 @@
   content: "";
   border: none;
   position: absolute;
-  top: 22px;
+  top: 21px;
 
   @media (min-width: $tablet-width) {
     top: 90px;
@@ -74,6 +74,8 @@
   background-image: url("../../icons/stack.svg#cat-diet2");
   width: 67px;
   height: 50px;
+  left: 12px;
+  top: 24px;
 
   @media (min-width: $tablet-width) {
     width: 268px;
@@ -95,7 +97,7 @@
   text-transform: uppercase;
   position: relative;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   padding-left: 70px;
 
   @media (min-width: $tablet-width) {
@@ -115,7 +117,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
   margin-top: 0;
   margin-bottom: 19px;
@@ -145,12 +147,12 @@
   &::after {
     content: "";
     width: 32px;
-    height: 10px;
+    height: 12px;
     background: url("../../icons/stack.svg#arrow") no-repeat center;
     transition: transform 0.3s linear;
     transform-origin: left center;
     display: block;
-    margin: auto 0 auto 15px;
+    margin: auto 0 auto 17px;
   }
 
   &:is(:hover, :active, :focus-visible, :focus)::after {

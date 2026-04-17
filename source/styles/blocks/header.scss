@@ -50,12 +50,12 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-bottom: 14px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 21px;
+    padding-top: 25px;
     padding-bottom: 0;
   }
 
@@ -114,9 +114,10 @@
   padding: 0;
   border: none;
   cursor: pointer;
-  width: 25px;
+  width: 24px;
   line-height: 30px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  margin-right: 1px;
   background-color: transparent;
 
   .toggle-menu--no-js {
@@ -136,7 +137,8 @@
     background-color: #111111;
     font-size: 0;
     color: transparent;
-    transition: 0.3s;
+    right: 0;
+    transition: background-color 0.3s, right 0.3s ease-in-out;
 
     &::after,
     &::before {
@@ -146,31 +148,33 @@
       width: 100%;
       height: 2px;
       background-color: #111111;
-      transition: 0.3s 0.3s, transform 0.3s;
+      transition: transform 0.3s, top 0.3s 0.3s;
     }
 
     &::after {
-      top: 7px;
+      top: 8px;
     }
 
     &::before {
-      top: -7px;
+      top: -8px;
     }
   }
 }
 
-.main-header__toggle--opened span {
-  background-color: transparent;
+.main-header__toggle--opened {
+  span {
+    background-color: transparent;
+    right: -4px;
 
-  &::after,
-  &::before {
-    transform: rotate3d(0, 0, 1, 45deg);
-    transition: 0.3s, transform 0.3s 0.3s;
-    top: 0;
-  }
+    &::after,
+    &::before {
+      transform: rotate3d(0, 0, 1, 45deg);
+      transition: top 0.3s, transform 0.3s 0.3s;
+      top: 0;
+    }
 
-  &::before {
-    transform: rotate3d(0, 0, 1, -45deg);
+    &::before {
+      transform: rotate3d(0, 0, 1, -45deg);
+    }
   }
 }
-

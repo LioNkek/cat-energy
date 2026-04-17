@@ -42,7 +42,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-right: -20px;
   }
 }
 
@@ -71,7 +70,7 @@
   color: #000000;
   position: relative;
   display: block;
-  padding: 25px 0;
+  padding: 22px 0 23px;
   text-transform: uppercase;
   transition: 0.3s;
 
@@ -79,8 +78,8 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    margin: 0;
-    padding: 10px 19px;
+    margin: 1px 4px 0 30px;
+    padding: 11px 0 10px;
   }
 
   &:hover {
@@ -97,8 +96,8 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 20px;
-    right: 20px;
+    left: 0;
+    right: 0;
     width: auto;
     height: 2px;
     background-color: $bg-basic;

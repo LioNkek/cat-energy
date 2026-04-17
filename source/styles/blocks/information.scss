@@ -93,18 +93,21 @@
 
 .information__item--cup::before {
   background-image: url("../../icons/stack.svg#cup");
+  background-size: 28px;
 }
 
 .information__item--cutlery::before {
   background-image: url("../../icons/stack.svg#cutlery");
+  background-size: 25px;
 }
 
 .information__item--clock::before {
   background-image: url("../../icons/stack.svg#clock");
+  background-size: 26px;
 }
 
 .information__text {
-  margin: 0;
+  margin: 2px 0 0;
   font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
