@@ -43,3 +43,12 @@ a {
     padding-right: 110px;
   }
 }
+
+picture {
+  display: block;
+  line-height: 0;
+}
+
+picture img {
+  display: block;
+}

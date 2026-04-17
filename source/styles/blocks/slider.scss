@@ -1,11 +1,30 @@
 .slider {
   position: relative;
   display: block;
-  margin: 0;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0 10px auto;
+    grid-column: 2;
+    grid-row: 1 / 6;
+  }
 }
 
 .slider__image {
   background-color: $bg-second;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, #ffffff 151px, $bg-second 151px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to bottom, #ffffff 135px, $bg-second 135px);
+  }
 }
 
 .slider__image-overlay {
@@ -35,7 +54,6 @@
 .slider__range:focus:not(:active):not(:hover) + .slider__button::before,
 .slider__range:focus:not(:active):not(:hover) + .slider__button {
   box-shadow: 0 0 0 2px #000000;
-  transition: box-shadow 0.3s ease-in-out;
 }
 
 .slider__range:active + .slider__button::before,
