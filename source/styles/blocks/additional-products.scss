@@ -15,7 +15,7 @@
   line-height: 24px;
   position: relative;
   display: inline-block;
-  margin: 25px 0 49px;
+  margin: 26px 0 49px;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -26,7 +26,7 @@
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    margin: 71px 0 105px;
+    margin: 71px 0 80px;
     grid-column: 1 / -1;
     width: max-content;
   }
@@ -38,9 +38,17 @@
     height: 2px;
     background-color: #63b423;
     position: absolute;
-    top: 50%;
+    top: 44%;
     transform: translateY(-50%);
     width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      top: 46%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 48%;
+    }
   }
 
   &::before {
@@ -57,7 +65,7 @@
   padding: 0;
   margin: 0 0 54px;
   display: grid;
-  gap: 31px;
+  gap: 31.5px;
 
   @media (min-width: $tablet-width) {
     gap: 54px;
@@ -112,7 +120,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: -13px;
+    top: -14px;
     border-top: 1px solid #cdcdcd;
 
     @media (min-width: $tablet-width) {
@@ -154,6 +162,8 @@
 
   @media (min-width: $tablet-width) {
     gap: 48px;
+    margin-top: 2px;
+    margin-right: 3px;
   }
 
   @media (min-width: $desktop-width) {

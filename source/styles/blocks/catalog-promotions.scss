@@ -32,7 +32,7 @@
     height: 2px;
     background-color: #63b423;
     position: absolute;
-    top: 50%;
+    top: 46%;
     transform: translateY(-50%);
     width: 100vw;
   }
@@ -85,7 +85,7 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #cdcdcd;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -112,6 +112,7 @@
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 40px;
+  padding: 15px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
