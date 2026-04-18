@@ -11,7 +11,7 @@
         transparent 10px
       );
     box-shadow: 0 -1px 0 0 #e6e6e6;
-    padding-bottom: 101px;
+    padding-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,6 +85,7 @@
   width: 124px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 16px;
     width: 162px;
   }
 
@@ -131,7 +132,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    padding: 7px 8px 0;
+    padding: 10px 8px 0;
     width: max-content;
     background-color: #ffffff;
   }
@@ -193,7 +194,7 @@
 
     @media (min-width: $desktop-width) {
       display: inline-block;
-      margin: 0 63px 0 0;
+      margin: 0 66px 0 0;
     }
   }
 }

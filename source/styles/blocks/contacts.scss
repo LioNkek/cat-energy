@@ -58,15 +58,15 @@
   z-index: 3;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 61px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 80px;
+    padding: 60px 80px 55px;
     position: absolute;
-    left: 40px;
-    top: 0%;
+    left: 110px;
+    top: -1px;
     max-width: 565px;
     width: 100%;
     background-color: #ffffff;
@@ -88,7 +88,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
-    margin-left: 30px;
+    margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,16 +110,19 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-    margin-right: 30px;
+    margin-right: 40px;
+    margin-top: -1px;
 
     span {
       display: block;
-      margin: 15px 0 -15px;
+      margin: 20px 0 -15px;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
+    text-align: left;
+    margin-left: auto;
   }
 }
 

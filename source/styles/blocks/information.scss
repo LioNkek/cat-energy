@@ -1,8 +1,12 @@
 .information {
   margin-bottom: 49px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 24px;
+    margin-bottom: 34px;
   }
 }
 
@@ -31,12 +35,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 77px;
+    gap: 87px 60px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
   }
 }
 
@@ -78,8 +83,8 @@
   line-height: 280px;
   color: #f2f2f2;
   z-index: -1;
-  left: 118px;
-  top: -38px;
+  left: 113px;
+  top: -40px;
 
   @media (min-width: $tablet-width) {
     content: counter(my-counter);
@@ -117,6 +122,7 @@
     font-size: 16px;
     line-height: 24px;
     max-width: 250px;
+    margin: 0;
   }
 
   .tablet-break {

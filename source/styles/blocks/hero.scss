@@ -20,7 +20,7 @@
     text-align: left;
     padding-top: 55px;
     padding-left: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 22px;
     min-height: 530px;
   }
 }
@@ -62,7 +62,7 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 }
 
@@ -97,7 +97,8 @@
     top: -25px;
     left: 50%;
     bottom: inherit;
-    margin: auto;
+    margin-left: 25px;
+    margin-top: -1px;
     transform: translateX(-34%);
   }
 }
