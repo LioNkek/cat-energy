@@ -20,7 +20,7 @@
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    margin: 71px 0 105px;
+    margin: 96px 0 72px;
     grid-column: 1 / -1;
     width: max-content;
   }
@@ -35,6 +35,10 @@
     top: 46%;
     transform: translateY(-50%);
     width: 100vw;
+
+    @media (min-width: $desktop-width) {
+      top: 48%;
+    }
   }
 
   &::before {
