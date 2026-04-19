@@ -32,12 +32,16 @@
     height: 2px;
     background-color: #63b423;
     position: absolute;
-    top: 46%;
+    top: 11px;
     transform: translateY(-50%);
     width: 100vw;
 
+    @media (min-width: $tablet-width) {
+      top: 15px;
+    }
+
     @media (min-width: $desktop-width) {
-      top: 48%;
+      top: 19px;
     }
   }
 

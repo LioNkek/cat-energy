@@ -14,7 +14,7 @@
   min-height: 302px;
   background-size: cover;
   background-image:
-    linear-gradient(#68b738d9),
+    linear-gradient(rgba(104, 183, 56, 0.85)),
     image-set(
       url("../../images/hero-background-mobile@1x.png") 1x,
       url("../../images/hero-background-mobile@2x.png") 2x
@@ -35,7 +35,7 @@
     right: 0;
     left: inherit;
     background-image:
-      linear-gradient(#68b738d9),
+      linear-gradient(rgba(104, 183, 56, 0.85)),
       image-set(
         url("../../images/hero-background-desktop@1x.png") 1x,
         url("../../images/hero-background-desktop@2x.png") 2x

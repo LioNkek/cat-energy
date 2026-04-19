@@ -38,16 +38,16 @@
     height: 2px;
     background-color: #63b423;
     position: absolute;
-    top: 44%;
+    top: 11px;
     transform: translateY(-50%);
     width: 100vw;
 
     @media (min-width: $tablet-width) {
-      top: 46%;
+      top: 15px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 48%;
+      top: 19px;
     }
   }
 
@@ -223,7 +223,7 @@
 .additional-products__promo {
   background-size: cover;
   background-image:
-    linear-gradient(#68b738d9),
+    linear-gradient(rgba(104, 183, 56, 0.85)),
     image-set(
       url("../../images/gift-background-mobile@1x.png") 1x,
       url("../../images/gift-background-mobile@2x.png") 2x
@@ -234,7 +234,7 @@
 
   @media (min-width: $tablet-width) {
     background-image:
-      linear-gradient(#68b738d9),
+      linear-gradient(rgba(104, 183, 56, 0.85)),
       image-set(
         url("../../images/gift-background-tablet@1x.png") 1x,
         url("../../images/gift-background-tablet@2x.png") 2x
@@ -245,7 +245,7 @@
 
   @media (min-width: $desktop-width) {
     background-image:
-      linear-gradient(#68b738d9),
+      linear-gradient(rgba(104, 183, 56, 0.85)),
       image-set(
         url("../../images/gift-background-desktop@1x.png") 1x,
         url("../../images/gift-background-desktop@2x.png") 2x
