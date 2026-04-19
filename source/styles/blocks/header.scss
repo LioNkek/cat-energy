@@ -128,14 +128,6 @@
   margin-right: 1px;
   background-color: transparent;
 
-  .toggle-menu--no-js {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
   span {
     position: relative;
     display: inline-block;
