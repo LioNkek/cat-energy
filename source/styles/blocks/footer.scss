@@ -28,6 +28,14 @@
   @media (min-width: $tablet-width) {
     margin: auto auto auto -20px;
   }
+
+  &:is(:hover, :focus-visible, :focus-within, :focus) {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .social__list {

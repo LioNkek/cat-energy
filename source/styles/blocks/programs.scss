@@ -150,6 +150,7 @@
   color: #000000;
   text-transform: uppercase;
   margin-top: 0;
+  width: max-content;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -174,5 +175,9 @@
 
   &:is(:hover, :active, :focus-visible, :focus)::after {
     transform: scale(1.35);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

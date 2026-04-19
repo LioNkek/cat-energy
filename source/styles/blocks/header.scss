@@ -105,6 +105,14 @@
     max-width: 202px;
     gap: 14px;
   }
+
+  &:is(:hover, :focus-visible, :focus-within, :focus) {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__toggle {

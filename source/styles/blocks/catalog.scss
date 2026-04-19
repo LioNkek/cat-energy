@@ -252,6 +252,11 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  &:is(:hover, :active, :focus-visible, :focus-within, :focus) {
+    background-color: #ebebeb;
+    color: #444444;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -21,9 +21,18 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  &:is(:hover, :focus-visible, :focus-within, :focus) {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
-/*.slider-button {
+/* .slider-button {
   cursor: pointer;
   display: block;
   width: 4px;
