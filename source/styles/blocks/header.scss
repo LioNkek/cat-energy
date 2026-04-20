@@ -47,9 +47,8 @@
 
 .main-header__container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding-top: 13px;
   padding-bottom: 14px;
   position: relative;
@@ -128,6 +127,10 @@
   margin-right: 1px;
   background-color: transparent;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   span {
     position: relative;
     display: inline-block;
@@ -162,6 +165,10 @@
 }
 
 .main-header__toggle--opened {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   span {
     background-color: transparent;
     right: -4px;

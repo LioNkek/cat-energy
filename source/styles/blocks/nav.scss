@@ -17,7 +17,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
     position: static;
     background-color: transparent;
     margin: 0;
@@ -44,6 +44,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -80,8 +81,9 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    margin: 1px 4px 0 30px;
+    margin: 3px 4px 0 30px;
     padding: 11px 0 10px;
+    max-width: 220px;
   }
 
   @media (min-width: $desktop-width) {

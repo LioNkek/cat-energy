@@ -112,6 +112,8 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
+  overflow-wrap: break-word;
+  padding: 0 2px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -133,7 +135,8 @@
     font-size: 14px;
     line-height: 14px;
     padding: 10px 8px 0;
-    width: max-content;
+    box-sizing: border-box;
+    width: 90%;
     background-color: #ffffff;
   }
 
@@ -161,6 +164,7 @@
     float: right;
     margin-top: 11px;
     text-align: right;
+    width: 40%;
   }
 
   @media (min-width: $desktop-width) {
