@@ -29,6 +29,7 @@
     margin: 71px 0 78px;
     grid-column: 1 / -1;
     width: max-content;
+    max-width: 100%;
   }
 
 
@@ -151,6 +152,7 @@
     text-align: center;
     vertical-align: middle;
     margin: auto auto auto 0;
+    max-width: 300px;
   }
 }
 
@@ -269,7 +271,7 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 83px;
-    margin: 0;
+    margin: auto 0;
     padding: 57px 0 60px 77px;
   }
 
@@ -291,13 +293,14 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 71px 125px 0 0;
+    margin: 71px 125px 50px 0;
     text-align: left;
+    max-width: 170px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
     padding-bottom: 43px;
     text-align: center;
+    margin: 0 auto;
   }
 }

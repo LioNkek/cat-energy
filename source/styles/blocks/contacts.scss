@@ -67,10 +67,12 @@
     position: absolute;
     left: 110px;
     top: -1px;
-    max-width: 565px;
-    width: 100%;
     background-color: #ffffff;
     transform: translateY(48%);
+    width: auto;
+    max-width: 70%;
+    min-width: 565px;
+    max-height: 250px;
   }
 }
 
@@ -93,6 +95,8 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    padding-right: 10px;
+    overflow: hidden;
   }
 }
 
@@ -123,6 +127,7 @@
     margin-right: 0;
     text-align: left;
     margin-left: auto;
+    overflow: hidden;
   }
 }
 

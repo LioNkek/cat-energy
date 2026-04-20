@@ -23,6 +23,12 @@
     margin: 0;
     width: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    justify-content: end;
+    margin-top: 8px;
+  }
 }
 
 .main-nav--closed {
