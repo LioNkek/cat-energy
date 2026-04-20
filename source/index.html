@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
@@ -72,6 +74,8 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/hero-desktop@1x.webp 1x, images/hero-desktop@2x.webp 2x" width="552" height="499">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/hero-tablet@1x.webp 1x, images/hero-tablet@2x.webp 2x" width="709" height="609">
           <source type="image/png" media="(min-width: 1440px)" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x" width="552" height="499">
           <source type="image/png" media="(min-width: 768px)" srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x" width="709" height="609">
           <img class="hero__image" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x" alt="упаковка еды кат энерджи курица" width="280" height="270">
@@ -156,12 +160,16 @@
         </p>
         <div class="advantages__image slider">
           <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-tablet-desktop@1x.webp 1x, images/cat-before-tablet-desktop@2x.webp 2x" width="560" height="512">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet-desktop@1x.webp 1x, images/cat-before-tablet-desktop@2x.webp 2x" width="560" height="512">
             <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-tablet-desktop@1x.png 1x, images/cat-before-tablet-desktop@2x.png 2x" width="560" height="512">
             <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet-desktop@1x.png 1x, images/cat-before-tablet-desktop@2x.png 2x" width="560" height="512">
             <img class="slider__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="толстый кот" width="280" height="256">
           </picture>
           <div class="slider__image-overlay">
             <picture>
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-tablet-desktop@1x.webp 1x, images/cat-after-tablet-desktop@2x.webp 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet-desktop@1x.webp 1x, images/cat-after-tablet-desktop@2x.webp 2x" width="560" height="512">
               <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-tablet-desktop@1x.png 1x, images/cat-after-tablet-desktop@2x.png 2x" width="560" height="512">
               <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet-desktop@1x.png 1x, images/cat-after-tablet-desktop@2x.png 2x" width="560" height="512">
               <img class="slider__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="худой кот" width="280" height="256">
@@ -192,6 +200,8 @@
         <h3 class="visually-hidden">Как до нас добраться</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1774247255733!5m2!1sru!2sru" width="320" height="362" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
         <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktope@1x.webp 1x, images/map-desktope@2x.webp 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="400">
           <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktope@1x.png 1x, images/map-desktope@2x.png 2x" width="1440" height="400">
           <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
           <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта проезда до офиса Кэт энерджи" width="320" height="362">
