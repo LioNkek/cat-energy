@@ -111,12 +111,12 @@
     gap: 10px;
   }
 
-  &:is(:hover, :focus-visible, :focus-within, :focus) .brand__link::before {
+  &:is(:hover, :focus-visible, :focus-within, :focus) .page-footer__brand-link::before {
     background-color: $bg-basic;
   }
 
-  &:active .brand__link::before,
-  &:active .brand__text {
+  &:active .page-footer__brand-link::before,
+  &:active .page-footer__brand-text {
     opacity: 0.3;
   }
 }
