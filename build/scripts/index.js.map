@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/index.js"],
+  "sourcesContent": ["/* \u0432 \u044D\u0442\u043E\u0442 \u0444\u0430\u0439\u043B \u0434\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u043A\u0440\u0438\u043F\u0442\u044B*/\nconst mainNav = document.querySelector('.main-nav');\nconst mainHeaderToggle = document.querySelector('.main-header__toggle');\n\nmainNav.classList.remove('main-nav--nojs');\nmainHeaderToggle.classList.remove('main-header__toggle--nojs');\n\nmainHeaderToggle.addEventListener('click', () => {\n  mainHeaderToggle.classList.toggle('main-header__toggle--opened');\n  mainNav.classList.toggle('main-nav--closed');\n});\n\n//slider\nconst range = document.querySelector('.slider__range');\nconst button = document.querySelector('.slider__button');\nconst overlay = document.querySelector('.slider__image-overlay');\n\nrange.addEventListener('input', (e) => {\n  const value = e.target.value;\n  button.style.left = `${value}%`;\n  overlay.style.clipPath = `inset(0 0 0 ${value}%)`;\n});\n"],
+  "mappings": ";AACA,IAAM,UAAU,SAAS,cAAc,WAAW;AAClD,IAAM,mBAAmB,SAAS,cAAc,sBAAsB;AAEtE,QAAQ,UAAU,OAAO,gBAAgB;AACzC,iBAAiB,UAAU,OAAO,2BAA2B;AAE7D,iBAAiB,iBAAiB,SAAS,MAAM;AAC/C,mBAAiB,UAAU,OAAO,6BAA6B;AAC/D,UAAQ,UAAU,OAAO,kBAAkB;AAC7C,CAAC;AAGD,IAAM,QAAQ,SAAS,cAAc,gBAAgB;AACrD,IAAM,SAAS,SAAS,cAAc,iBAAiB;AACvD,IAAM,UAAU,SAAS,cAAc,wBAAwB;AAE/D,MAAM,iBAAiB,SAAS,CAAC,MAAM;AACrC,QAAM,QAAQ,EAAE,OAAO;AACvB,SAAO,MAAM,OAAO,GAAG,KAAK;AAC5B,UAAQ,MAAM,WAAW,eAAe,KAAK;AAC/C,CAAC;",
+  "names": []
+}
