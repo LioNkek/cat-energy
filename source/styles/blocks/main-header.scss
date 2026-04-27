@@ -7,27 +7,9 @@
 }
 
 .main-header--preview::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  min-height: 302px;
-  background-size: cover;
-  background-image:
-    linear-gradient(rgba(104, 183, 56, 0.85)),
-    image-set(
-      url("../../images/hero-background-mobile@1x.png") 1x,
-      url("../../images/hero-background-mobile@2x.png") 2x
-    );
-  background-position: top;
-  background-repeat: no-repeat;
-  z-index: -1;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
   @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
     display: block;
     width: 50%;
     min-height: 694px;
@@ -42,6 +24,8 @@
       );
     background-size: cover;
     background-position: top;
+    background-repeat: no-repeat;
+    z-index: -1;
   }
 }
 

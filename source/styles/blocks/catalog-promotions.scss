@@ -10,20 +10,19 @@
   position: relative;
   display: inline-block;
   margin: 40px 0 32px;
+  max-width: 85%;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin: 80px 0 66px 40px;
+    margin: 80px 40px 66px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
     margin: 96px 0 72px;
-    grid-column: 1 / -1;
     width: max-content;
-    max-width: 100%;
   }
 
 

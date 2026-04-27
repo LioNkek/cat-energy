@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
@@ -324,17 +326,17 @@
             Заказать
           </a>
         </li>
-        <li class="catalog__item--show-all">
-          <a class="catalog__link--add" href="#">
+        <li class="catalog__item catalog__item--show-all">
+          <a class="catalog__link catalog__link--add" href="#">
             <span class="visually-hidden">Добавить товар</span>
           </a>
-          <h2 class="catalog__name--show-all">
+          <h2 class="catalog__name catalog__name--show-all">
             Показать еще 100500 товаров
           </h2>
-          <p class="catalog__text--show-all">
+          <p class="catalog__text catalog__text--show-all">
             На самом деле вкусов гораздо больше!
           </p>
-          <a class="catalog__button--show-all button" href="#">
+          <a class="catalog__button catalog__button--show-all button" href="#">
             Показать все
           </a>
         </li>
@@ -411,9 +413,9 @@
         </li>
       </ul>
       <div class="additional-products__promo">
-        <a class="additional-products__gift" href="#">
+        <div class="additional-products__gift">
           <span class="visually-hidden">Получить подарок</span>
-        </a>
+        </div>
         <p class="additional-products__promo-text">
           Закажите все<br>и получите чехол для<br>кота в подарок!
         </p>

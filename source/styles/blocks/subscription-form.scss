@@ -9,6 +9,7 @@
     grid-template-columns: 496px auto;
     width: 100%;
     margin: 0 auto 104px;
+    justify-content: center;
   }
 }
 
@@ -38,16 +39,25 @@
     color: #444444;
   }
 
-  &:hover {
-    border: 1px solid #cdcdcd;
+  &:not(:disabled):hover {
+    outline: 1px solid #cdcdcd;
+    outline-offset: -1px;
   }
 
-  &:is(:focus-visible, :focus-within, :focus) {
-    border: 2px solid #444444;
+  &:not(:disabled):is(:focus-visible, :focus-within, :focus) {
+    outline: 2px solid #444444;
+    outline-offset: -2px;
   }
 
-  &:not(:placeholder-shown):invalid {
-    border: 2px solid #ff8282;
+  &:not(:placeholder-shown):invalid:not(:disabled) {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
   }
 }
 
@@ -68,5 +78,9 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     min-width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 256px;
   }
 }
