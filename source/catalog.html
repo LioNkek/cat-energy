@@ -28,8 +28,8 @@
           </a>
           <a href="index.html">
             <picture>
-              <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text-grey.svg">
-              <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text-grey.svg">
+              <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text.svg">
+              <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text.svg">
               <img class="main-header__logo-text-image" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи текст логотипа">
             </picture>
           </a>
@@ -61,7 +61,7 @@
       </div>
     </div>
   </header>
-  <main class="catalog-container">
+  <main class="main-container">
     <section class="catalog container">
       <h1 class="catalog__title title">
         Каталог продукции
@@ -327,9 +327,9 @@
           </a>
         </li>
         <li class="catalog__item catalog__item--show-all">
-          <a class="catalog__link catalog__link--add" href="#">
+          <div class="catalog__link catalog__link--add">
             <span class="visually-hidden">Добавить товар</span>
-          </a>
+          </div>
           <h2 class="catalog__name catalog__name--show-all">
             Показать еще 100500 товаров
           </h2>
@@ -417,7 +417,7 @@
           <span class="visually-hidden">Получить подарок</span>
         </div>
         <p class="additional-products__promo-text">
-          Закажите все<br>и получите чехол для<br>кота в подарок!
+          Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!
         </p>
       </div>
     </section>

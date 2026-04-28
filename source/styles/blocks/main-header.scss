@@ -17,13 +17,15 @@
     right: 0;
     left: inherit;
     background-image:
-      linear-gradient(rgba(104, 183, 56, 0.85)),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(
+        url("../../images/hero-background-desktop@1x.webp") 1x,
+        url("../../images/hero-background-desktop@2x.webp") 2x,
         url("../../images/hero-background-desktop@1x.png") 1x,
         url("../../images/hero-background-desktop@2x.png") 2x
       );
-    background-size: cover;
-    background-position: top;
+    background-size: auto 100%;
+    background-position: top left;
     background-repeat: no-repeat;
     z-index: -1;
   }

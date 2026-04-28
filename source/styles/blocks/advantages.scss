@@ -1,6 +1,5 @@
-.advantages__container {
+.advantages {
   background-color: $bg-second;
-  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
@@ -11,6 +10,17 @@
         transparent 10px
       );
     box-shadow: 0 -1px 0 0 #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-shadow: none;
+  }
+}
+
+.advantages__container {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
     padding-bottom: 100px;
   }
 
@@ -177,20 +187,7 @@
     margin: 0;
   }
 
-
-  .tablet-break {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  span {
+  .advantages__price-text {
     @media (min-width: $tablet-width) {
       display: inline-block;
       margin-bottom: 9px;
@@ -199,6 +196,16 @@
     @media (min-width: $desktop-width) {
       display: inline-block;
       margin: 0 66px 0 0;
+    }
+  }
+
+  .advantages__price-number {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: inline;
     }
   }
 }

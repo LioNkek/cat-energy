@@ -1,7 +1,6 @@
 .contacts {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
 
 
   @media (min-width: $tablet-width) {
@@ -133,10 +132,14 @@
 
 .contacts__map {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 362px;
   overflow: hidden;
   background-color: #f2f2f2;
+
+  iframe {
+    width: 100vw;
+  }
 
   @media (min-width: 768px) {
     height: 400px;
