@@ -49,10 +49,16 @@
   padding: 0;
   cursor: ew-resize;
   z-index: 10;
+
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+  }
 }
 
-.slider__range:focus:not(:active):not(:hover) + .slider__button::before,
-.slider__range:focus:not(:active):not(:hover) + .slider__button {
+.slider__range:focus:not(:active):not(:hover):not(:disabled):not(.button-disabled) + .slider__button::before,
+.slider__range:focus:not(:active):not(:hover):not(:disabled):not(.button-disabled) + .slider__button {
   box-shadow: 0 0 0 2px #000000;
 }
 
@@ -61,14 +67,14 @@
   box-shadow: none;
 }
 
-.slider__range:is(:hover, :focus-visible, :focus):not(:active) + .slider__button,
-.slider__range:is(:hover, :focus-visible, :focus):not(:active) + .slider__button::after {
+.slider__range:is(:hover, :focus-visible, :focus):not(:active):not(:disabled):not(.button-disabled) + .slider__button,
+.slider__range:is(:hover, :focus-visible, :focus):not(:active):not(:disabled):not(.button-disabled) + .slider__button::after {
   background-color: $bg-basic;
 }
 
 
-.slider__range:active + .slider__button,
-.slider__range:active + .slider__button::after {
+.slider__range:active:not(:disabled):not(.button-disabled) + .slider__button,
+.slider__range:active:not(:disabled):not(.button-disabled) + .slider__button::after {
   background-color: #5eaa2f;
   opacity: 60%;
 }
@@ -115,4 +121,12 @@
     left: 50%;
     top: 50%;
   }
+}
+
+.slider__range:disabled + .slider__button,
+.slider__range.button-disabled + .slider__button {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+  user-select: none;
 }

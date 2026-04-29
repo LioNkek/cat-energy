@@ -1,7 +1,7 @@
 .contacts {
   position: relative;
   margin: 0;
-
+  width: 100vw;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
@@ -62,16 +62,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 80px 55px;
+    padding: 60px 75px 58px 80px;
     position: absolute;
-    left: 110px;
-    top: -1px;
+    left: calc(50vw - 610px);
+    top: 1px;
     background-color: #ffffff;
     transform: translateY(48%);
     width: auto;
     max-width: 70%;
     min-width: 565px;
     max-height: 250px;
+    margin: 0;
   }
 }
 
@@ -82,9 +83,9 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  white-space: pre-line;
   padding: 0;
   margin: 0;
+  max-width: 200px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -94,7 +95,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    padding-right: 10px;
+    padding-right: 5px;
     overflow: hidden;
   }
 }
@@ -105,7 +106,6 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
-  white-space: pre-line;
   padding: 0;
   margin: 0;
 
@@ -115,10 +115,12 @@
     text-align: right;
     margin-right: 40px;
     margin-top: -1px;
+    margin-left: auto;
+    max-width: 200px;
 
     span {
       display: block;
-      margin: 20px 0 -15px;
+      margin: 20px 0 0;
     }
   }
 
@@ -127,6 +129,7 @@
     text-align: left;
     margin-left: auto;
     overflow: hidden;
+    max-width: 160px;
   }
 }
 

@@ -39,6 +39,7 @@
   display: block;
   position: static;
   margin: 14px -20px -14px;
+  width: 100vw;
 }
 
 
@@ -98,11 +99,11 @@
     margin: 3px 0 0 34px;
   }
 
-  &:hover {
+  &:not(:disabled):not(.button-disabled):hover {
     opacity: 0.6;
   }
 
-  &:active {
+  &:not(:disabled):not(.button-disabled):active {
     opacity: 0.3;
   }
 }
@@ -118,7 +119,6 @@
     height: 2px;
     background-color: $bg-basic;
   }
-
 
   @media (min-width: $desktop-width) {
     background-color: #ffffff;

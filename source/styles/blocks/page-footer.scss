@@ -32,11 +32,11 @@
     margin: auto auto auto -20px;
   }
 
-  &:is(:hover, :focus-visible, :focus-within, :focus) {
+  &:not(:disabled):not(.button-disabled):is(:hover, :focus-visible, :focus-within, :focus) {
     opacity: 0.8;
   }
 
-  &:active {
+  &:not(:disabled):not(.button-disabled):active {
     opacity: 0.6;
   }
 
@@ -77,11 +77,11 @@
     background-color: #666666;
   }
 
-  &:is(:hover, :focus-visible, :focus)::before {
+  &:not(:disabled):not(.button-disabled):is(:hover, :focus-visible, :focus)::before {
     background-color: $bg-basic;
   }
 
-  &:active::before {
+  &:not(:disabled):not(.button-disabled):active::before {
     opacity: 0.3;
   }
 }
@@ -110,16 +110,18 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    justify-content: end;
+    justify-content: flex-start;
+    width: fit-content;
+    margin-left: auto;
     gap: 10px;
   }
 
-  &:is(:hover, :focus-visible, :focus-within, :focus) .page-footer__brand-link::before {
+  &:not(:disabled):not(.button-disabled):is(:hover, :focus-visible, :focus-within, :focus) .page-footer__brand-link::before {
     background-color: $bg-basic;
   }
 
-  &:active .page-footer__brand-link::before,
-  &:active .page-footer__brand-text {
+  &:not(:disabled):not(.button-disabled):active .page-footer__brand-link::before,
+  &:not(:disabled):not(.button-disabled):active .page-footer__brand-text {
     opacity: 0.3;
   }
 }

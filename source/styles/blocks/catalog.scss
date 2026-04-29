@@ -124,20 +124,12 @@
   grid-column: 2;
   margin-bottom: 8px;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 170px;
     text-align: center;
     margin: 22px auto 20px;
     font-size: 20px;
     line-height: 24px;
-
-    br {
-      display: block;
-    }
   }
 
   @media (min-width: $desktop-width) {

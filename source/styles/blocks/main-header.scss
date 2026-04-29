@@ -38,6 +38,7 @@
   padding-top: 13px;
   padding-bottom: 14px;
   position: relative;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
@@ -91,11 +92,11 @@
     gap: 14px;
   }
 
-  &:is(:hover, :focus-visible, :focus-within, :focus) {
+  &:not(:disabled):not(.button-disabled):is(:hover, :focus-visible, :focus-within, :focus) {
     opacity: 0.8;
   }
 
-  &:active {
+  &:not(:disabled):not(.button-disabled):active {
     opacity: 0.6;
   }
 }
@@ -170,4 +171,8 @@
       transform: rotate3d(0, 0, 1, -45deg);
     }
   }
+}
+
+.main-header__toggle--nojs {
+  display: none;
 }

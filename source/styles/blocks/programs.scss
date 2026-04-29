@@ -178,11 +178,11 @@
     }
   }
 
-  &:is(:hover, :active, :focus-visible, :focus)::after {
+  &:not(:disabled):not(.button-disabled):is(:hover, :active, :focus-visible, :focus)::after {
     width: 32px;
   }
 
-  &:active {
+  &:not(:disabled):not(.button-disabled):active {
     opacity: 0.3;
   }
 }
