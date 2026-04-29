@@ -92,11 +92,11 @@
     gap: 14px;
   }
 
-  &:not(:disabled):not(.button-disabled):is(:hover, :focus-visible, :focus-within, :focus) {
+  &:not(.button-disabled):is(:hover, :focus-visible, :focus-within, :focus) {
     opacity: 0.8;
   }
 
-  &:not(:disabled):not(.button-disabled):active {
+  &:not(.button-disabled):active {
     opacity: 0.6;
   }
 }
@@ -110,7 +110,8 @@
   cursor: pointer;
   width: 24px;
   line-height: 30px;
-  margin-bottom: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   margin-right: 1px;
   background-color: transparent;
 

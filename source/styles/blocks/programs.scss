@@ -178,11 +178,11 @@
     }
   }
 
-  &:not(:disabled):not(.button-disabled):is(:hover, :active, :focus-visible, :focus)::after {
+  &:not(.button-disabled):is(:hover, :active, :focus-visible, :focus)::after {
     width: 32px;
   }
 
-  &:not(:disabled):not(.button-disabled):active {
+  &:not(.button-disabled):active {
     opacity: 0.3;
   }
 }

@@ -146,7 +146,8 @@
     line-height: 14px;
     padding: 10px 8px 0;
     box-sizing: border-box;
-    width: 90%;
+    max-width: 90%;
+    width: fit-content;
     background-color: #ffffff;
   }
 
@@ -195,7 +196,7 @@
 
     @media (min-width: $desktop-width) {
       display: inline-block;
-      margin: 0 66px 0 0;
+      margin: 0 62px 0 0;
     }
   }
 
