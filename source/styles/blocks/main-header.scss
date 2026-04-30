@@ -43,6 +43,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 25px;
     padding-bottom: 0;
+    flex-wrap: nowrap;
   }
 
   @media (min-width: $desktop-width) {
